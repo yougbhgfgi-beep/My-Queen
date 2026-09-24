@@ -1,0 +1,15 @@
+# 📸 ضع صورتك هنا
+# -------------------------------------------------
+# 1) انسخ ملفات الصور في هذا المجلد (public/images/)
+# 2) عدّل أسماء الملفات في: src/config/siteConfig.js
+#
+#    images: {
+#      timeline1: "/images/timeline-1.jpg",
+#      timeline2: "/images/timeline-2.jpg",
+#      gallery: ["/images/gallery-1.jpg", ...],
+#    }
+#
+# يعني لو سمّيت صورتك "ahmed.jpg" حطها هنا واكتب:
+#   "/images/ahmed.jpg"
+#
+# 💡 نصيحة: سمّي الصور بأسماء واضحة عشان تعرف ترتبها بسهولة.
