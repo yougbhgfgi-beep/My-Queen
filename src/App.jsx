@@ -15,6 +15,7 @@ import VideoSection from "./components/VideoSection.jsx";
 import Reasons from "./components/Reasons.jsx";
 import Footer from "./components/Footer.jsx";
 import FinalScene from "./components/FinalScene.jsx";
+import LockScreen from "./components/LockScreen.jsx";
 import { SecretPopup, Lightbox, MessageModal } from "./components/Modals.jsx";
 import { MusicNote } from "./components/Icons.jsx";
 
@@ -72,6 +73,11 @@ export default function App() {
       setIsPlaying(true);
     }
   };
+
+  // 🔒 لو الموقع مقفول (عدم سداد) => تظهر شاشة القفل بدل الموقع
+  if (siteConfig.siteLocked) {
+    return <LockScreen />;
+  }
 
   return (
     <div className="bg-gray-900 min-h-screen font-sans text-gray-100 overflow-x-hidden relative">
